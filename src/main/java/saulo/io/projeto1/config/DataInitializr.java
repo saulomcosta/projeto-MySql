@@ -46,8 +46,8 @@ public class DataInitializr implements ApplicationListener<ContextRefreshedEvent
 		 * 
 		 * repository.save(update);
 		 * 
-		 * Busca um dado pelo meu método customizado 
-		 * 		 
+		 * Busca um dado pelo meu método customizado
+		 * 
 		 * Useres useresName = repository.findByName("saulo");
 		 * System.out.println(useresName.getName());
 		 * 
@@ -55,7 +55,13 @@ public class DataInitializr implements ApplicationListener<ContextRefreshedEvent
 		 * 
 		 * Useres useresLike = repository.findByNameLike("Sa");
 		 * System.out.println(useresLike.getName());
-		 */	}
+		 * 
+		 * Busca um dado pelo nome ignorando o case
+		 * 
+		 * Useres useres = repository.findByNameIgnoreCase("SAULO");
+		 * System.out.println(useres.getName());
+		 */
+	}
 
 	public void createdUseres(String name, String email) {
 

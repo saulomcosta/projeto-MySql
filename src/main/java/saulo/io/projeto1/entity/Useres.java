@@ -18,6 +18,16 @@ public class Useres {
 	private String name;
 	private String email;
 
+	public Useres(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+
+	public Useres() {
+
+	}
+
 	@ManyToMany
 	private Set<Roles> roles;
 
